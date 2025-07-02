@@ -4,7 +4,7 @@
 ![Python](https://img.shields.io/badge/Python-3.9-blue)
 ![Docker](https://img.shields.io/badge/Docker-ready-blue)
 ![AWS Lambda](https://img.shields.io/badge/AWS-Lambda-orange)
-![License](https://img.shields.io/badge/License-MIT-green)
+
 
 This project is an end-to-end machine learning deployment pipeline that detects fake news using a Support Vector Machine (SVM) model and serves predictions via a serverless API using AWS Lambda and FastAPI.
 
@@ -105,3 +105,12 @@ For questions or collaborations, feel free to reach out via LinkedIn.
 - Docker  
 - AWS Lambda  
 - scikit-learn  
+
+
+## Live Demo
+
+You can test the deployed API and view interactive Swagger docs at the following URL:
+
+[https://alaqswk3bilncbhkj63mtowwei0bovnm.lambda-url.ap-south-1.on.aws/docs](https://alaqswk3bilncbhkj63mtowwei0bovnm.lambda-url.ap-south-1.on.aws/docs)
+
+This is powered by FastAPI’s automatic OpenAPI integration, running serverlessly on AWS Lambda.
