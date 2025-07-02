@@ -1,10 +1,8 @@
-
 # MLOPS Project: Fake News Detection using SVM | Docker + AWS Lambda + FastAPI
 
 ![Python](https://img.shields.io/badge/Python-3.9-blue)
 ![Docker](https://img.shields.io/badge/Docker-ready-blue)
 ![AWS Lambda](https://img.shields.io/badge/AWS-Lambda-orange)
-
 
 This project is an end-to-end machine learning deployment pipeline that detects fake news using a Support Vector Machine (SVM) model and serves predictions via a serverless API using AWS Lambda and FastAPI.
 
@@ -91,6 +89,22 @@ Or use Postman with the following input file:
 }
 ```
 
+## Live Demo
+
+You can test the deployed API and view interactive Swagger docs at the following URL:
+
+[https://alaqswk3bilncbhkj63mtowwei0bovnm.lambda-url.ap-south-1.on.aws/docs](https://alaqswk3bilncbhkj63mtowwei0bovnm.lambda-url.ap-south-1.on.aws/docs)
+
+This is powered by FastAPI’s automatic OpenAPI integration, running serverlessly on AWS Lambda.
+
+## Dataset
+
+The dataset used for training and testing the fake news detection model is available on Kaggle:
+
+[Fake News Detection Dataset by emineyetm](https://www.kaggle.com/datasets/emineyetm/fake-news-detection-datasets)
+
+It contains labeled news articles categorized as 'FAKE' and 'REAL', suitable for binary classification tasks.
+
 ## Contributing
 
 Feel free to fork the repository, open issues, or suggest improvements. I’m open to feedback and collaboration.
@@ -105,12 +119,3 @@ For questions or collaborations, feel free to reach out via LinkedIn.
 - Docker  
 - AWS Lambda  
 - scikit-learn  
-
-
-## Live Demo
-
-You can test the deployed API and view interactive Swagger docs at the following URL:
-
-[https://alaqswk3bilncbhkj63mtowwei0bovnm.lambda-url.ap-south-1.on.aws/docs](https://alaqswk3bilncbhkj63mtowwei0bovnm.lambda-url.ap-south-1.on.aws/docs)
-
-This is powered by FastAPI’s automatic OpenAPI integration, running serverlessly on AWS Lambda.
