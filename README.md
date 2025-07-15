@@ -91,11 +91,12 @@ Or use Postman with the following input file:
 
 ## Live Demo
 
-You can test the deployed API and view interactive Swagger docs at the following URL:
-
+You can **view the demo API's interactive Swagger documentation** at the following URL:
 [https://alaqswk3bilncbhkj63mtowwei0bovnm.lambda-url.ap-south-1.on.aws/docs](https://alaqswk3bilncbhkj63mtowwei0bovnm.lambda-url.ap-south-1.on.aws/docs)
 
-This is powered by FastAPI’s automatic OpenAPI integration, running serverlessly on AWS Lambda.
+> ⚠️ *Note: This is a demo URL and is currently **non-functional**, as the associated AWS Lambda resources have been terminated.*
+
+This was originally powered by **FastAPI’s automatic OpenAPI integration**, deployed serverlessly using **AWS Lambda**.
 
 ## Dataset
 
