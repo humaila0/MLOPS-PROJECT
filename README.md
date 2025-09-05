@@ -1,12 +1,15 @@
 # MLOPS Project: Fake News Detection using SVM | Docker + AWS Lambda + FastAPI
 
-![Python](https://img.shields.io/badge/Python-3.9-blue)
-![Docker](https://img.shields.io/badge/Docker-ready-blue)
-![AWS Lambda](https://img.shields.io/badge/AWS-Lambda-orange)
+![Python](https://img.shields.io/badge/Python-3.9-blue)  
+![Docker](https://img.shields.io/badge/Docker-ready-blue)  
+![AWS Lambda](https://img.shields.io/badge/AWS-Lambda-orange)  
+![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 
 This project is an end-to-end machine learning deployment pipeline that detects fake news using a Support Vector Machine (SVM) model and serves predictions via a serverless API using AWS Lambda and FastAPI.
 
-## Project Overview
+---
+
+## 📌 Project Overview
 
 - Trained a machine learning model to classify news articles as real or fake  
 - Applied TF-IDF vectorization for text preprocessing  
@@ -14,7 +17,9 @@ This project is an end-to-end machine learning deployment pipeline that detects 
 - Deployed the container on AWS Lambda using Amazon ECR  
 - Exposed a REST API using FastAPI, integrated with Lambda using Mangum
 
-## Folder Structure
+---
+
+## 📁 Folder Structure
 
 ```
 deploy-ml-model-aws-lambda-docker-main/
@@ -30,14 +35,18 @@ deploy-ml-model-aws-lambda-docker-main/
 ├── True.csv / Fake.csv        # Datasets
 ```
 
-## Tech Stack
+---
 
-- Machine Learning: Python, scikit-learn, SVM, TF-IDF  
-- API Framework: FastAPI, Pydantic  
-- Deployment: Docker, AWS Lambda, Amazon ECR  
-- Integration: Mangum (FastAPI + Lambda), Uvicorn
+## 🧰 Tech Stack
 
-## Setup & Usage
+- **Machine Learning**: Python, scikit-learn, SVM, TF-IDF  
+- **API Framework**: FastAPI, Pydantic  
+- **Deployment**: Docker, AWS Lambda, Amazon ECR  
+- **Integration**: Mangum (FastAPI + Lambda), Uvicorn
+
+---
+
+## ⚙️ Setup & Usage
 
 ### 1. Train the Model
 
@@ -45,7 +54,7 @@ deploy-ml-model-aws-lambda-docker-main/
 python train.py
 ```
 
-This will generate the following files:
+Generates:
 - `news_model.pkl`  
 - `tfidf_vectorizer.pkl`
 
@@ -57,7 +66,7 @@ docker build -t fake-news-detector .
 
 ### 3. Push to Amazon ECR
 
-Tag and push your image to ECR using AWS CLI as per AWS documentation.
+Tag and push your image using AWS CLI as per [AWS documentation](https://docs.aws.amazon.com/AmazonECR/latest/userguide/docker-push-ecr-image.html).
 
 ### 4. Deploy to AWS Lambda
 
@@ -70,9 +79,11 @@ Tag and push your image to ECR using AWS CLI as per AWS documentation.
 python invoke_api.py
 ```
 
-Or use Postman with the following input file:
+Or use Postman with the following input:
 
-## Sample Input (`sample.json`)
+---
+
+## 🧪 Sample Input (`sample.json`)
 
 ```json
 {
@@ -81,7 +92,7 @@ Or use Postman with the following input file:
 }
 ```
 
-## Expected Output
+### ✅ Expected Output
 
 ```json
 {
@@ -89,34 +100,51 @@ Or use Postman with the following input file:
 }
 ```
 
-## Live Demo
+---
 
-You can **view the demo API's interactive Swagger documentation** at the following URL:
+## 🚀 Live Demo
+
+You can **view the demo API's interactive Swagger documentation** at:  
 [https://alaqswk3bilncbhkj63mtowwei0bovnm.lambda-url.ap-south-1.on.aws/docs](https://alaqswk3bilncbhkj63mtowwei0bovnm.lambda-url.ap-south-1.on.aws/docs)
 
-> ⚠️ *Note: This is a demo URL and is currently **non-functional**, as the associated AWS Lambda resources have been terminated.*
+> ⚠️ *Note: This is a demo URL and is currently non-functional, as the associated AWS Lambda resources have been terminated.*
 
-This was originally powered by **FastAPI’s automatic OpenAPI integration**, deployed serverlessly using **AWS Lambda**.
+---
 
-## Dataset
+## 📊 Dataset
 
-The dataset used for training and testing the fake news detection model is available on Kaggle:
+Used dataset: [Fake News Detection Dataset by emineyetm](https://www.kaggle.com/datasets/emineyetm/fake-news-detection-datasets)  
+Contains labeled news articles categorized as 'FAKE' and 'REAL', suitable for binary classification.
 
-[Fake News Detection Dataset by emineyetm](https://www.kaggle.com/datasets/emineyetm/fake-news-detection-datasets)
+---
 
-It contains labeled news articles categorized as 'FAKE' and 'REAL', suitable for binary classification tasks.
-
-## Contributing
+## 🤝 Contributing
 
 Feel free to fork the repository, open issues, or suggest improvements. I’m open to feedback and collaboration.
 
-## Contact
+---
 
-For questions or collaborations, feel free to reach out via LinkedIn.
+## 📬 Contact
 
-## Acknowledgements
+For questions or collaborations, feel free to reach out via [LinkedIn](https://www.linkedin.com/in/humaila-muhammad-farooq).
+
+---
+
+## 🙏 Acknowledgements
 
 - FastAPI  
 - Docker  
 - AWS Lambda  
 - scikit-learn  
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.  
+You are free to use, modify, and distribute this code with proper attribution.
+
+See the [LICENSE](./LICENSE) file for full details.
+
+
+Let me know if you'd like to add GitHub Actions badges, coverage reports, or contributor guidelines next. I can help you make this repo sparkle for recruiters and collaborators alike.
