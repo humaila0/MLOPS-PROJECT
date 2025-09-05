@@ -126,7 +126,7 @@ Feel free to fork the repository, open issues, or suggest improvements. I’m op
 
 ## 📬 Contact
 
-For questions or collaborations, feel free to reach out via [LinkedIn](https://www.linkedin.com/in/humaila-muhammad-farooq).
+For questions or collaborations, feel free to reach out via [LinkedIn](www.linkedin.com/in/humaila-m-3248b12bb).
 
 ---
 
